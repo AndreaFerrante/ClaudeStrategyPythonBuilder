@@ -1,0 +1,302 @@
+{
+  "ohlcv_validation": {
+    "total_bars_compared": 4139,
+    "bars_in_polars_only": 2761,
+    "bars_in_sierra_only": 0,
+    "thresholds_used": {
+      "price_threshold": 0.25,
+      "volume_threshold": 1
+    },
+    "price_matches": {
+      "open": 4139,
+      "high": 4139,
+      "low": 4139,
+      "close": 4139
+    },
+    "price_discrepancies": {
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0
+    },
+    "price_mismatch_pct": {
+      "open": 0.0,
+      "high": 0.0,
+      "low": 0.0,
+      "close": 0.0
+    },
+    "volume_matches": {
+      "volume": 4138
+    },
+    "volume_discrepancies": {
+      "volume": 1
+    },
+    "volume_mismatch_pct": 0.02,
+    "overall_valid": true,
+    "discrepancies": [
+      {
+        "bar_time": "2025-12-10 12:11:00",
+        "Open": 6856.5,
+        "Open_Bar": 6856.5,
+        "High": 6857.25,
+        "High_Bar": 6857.25,
+        "Low": 6856.25,
+        "Low_Bar": 6856.25,
+        "Close": 6857.25,
+        "Last_Bar": 6857.25,
+        "Volume": 847,
+        "Volume_Bar": 869.0
+      }
+    ]
+  },
+  "cd_validation": {
+    "cd_bars_compared": 4139,
+    "cd_threshold_used": 10,
+    "cd_matches": 0,
+    "cd_discrepancies": 4139,
+    "cd_mismatch_pct": 100.0,
+    "cd_validation_passed": false,
+    "cd_details": [
+      {
+        "bar_time": "2025-12-07 17:00:00",
+        "CD_Total_End": 731.0,
+        "Close_CD": -171.0,
+        "cd_diff": 902.0
+      },
+      {
+        "bar_time": "2025-12-07 17:01:00",
+        "CD_Total_End": 998.0,
+        "Close_CD": -170.0,
+        "cd_diff": 1168.0
+      },
+      {
+        "bar_time": "2025-12-07 17:02:00",
+        "CD_Total_End": 1124.0,
+        "Close_CD": -166.0,
+        "cd_diff": 1290.0
+      },
+      {
+        "bar_time": "2025-12-07 17:03:00",
+        "CD_Total_End": 1277.0,
+        "Close_CD": -203.0,
+        "cd_diff": 1480.0
+      },
+      {
+        "bar_time": "2025-12-07 17:04:00",
+        "CD_Total_End": 1469.0,
+        "Close_CD": -273.0,
+        "cd_diff": 1742.0
+      }
+    ]
+  },
+  "poc_validation": {
+    "poc_bars_compared": 4139,
+    "poc_threshold_used": 0.25,
+    "poc_matches": 4139,
+    "poc_discrepancies": 0,
+    "poc_mismatch_pct": 0.0,
+    "poc_validation_passed": true
+  },
+  "va_areas_validation": {
+    "va_areas_ticks_compared": 2521728,
+    "poc_exact_threshold_used": 0.01,
+    "va_areas_matches": 2490034,
+    "va_areas_mismatches": 31694,
+    "va_match_percentage": 98.74,
+    "va_mismatch_percentage": 1.26,
+    "va_validation_passed": true,
+    "va_breakdown": [
+      {
+        "VA_Areas": "na",
+        "Expected_VA_Areas": "PO",
+        "va_match": false,
+        "len": 50
+      },
+      {
+        "VA_Areas": "na",
+        "Expected_VA_Areas": "na",
+        "va_match": true,
+        "len": 1256983
+      },
+      {
+        "VA_Areas": "VA",
+        "Expected_VA_Areas": "PO",
+        "va_match": false,
+        "len": 9047
+      },
+      {
+        "VA_Areas": "VA",
+        "Expected_VA_Areas": "VA",
+        "va_match": true,
+        "len": 1194669
+      },
+      {
+        "VA_Areas": "PO",
+        "Expected_VA_Areas": "na",
+        "va_match": false,
+        "len": 5
+      },
+      {
+        "VA_Areas": "na",
+        "Expected_VA_Areas": "VA",
+        "va_match": false,
+        "len": 20565
+      },
+      {
+        "VA_Areas": "VA",
+        "Expected_VA_Areas": "na",
+        "va_match": false,
+        "len": 161
+      },
+      {
+        "VA_Areas": "PO",
+        "Expected_VA_Areas": "PO",
+        "va_match": true,
+        "len": 38382
+      },
+      {
+        "VA_Areas": "PO",
+        "Expected_VA_Areas": "VA",
+        "va_match": false,
+        "len": 1866
+      }
+    ],
+    "va_mismatch_samples": [
+      {
+        "Datetime": "2025-12-07 17:00:00.001002",
+        "Price": 6883.5,
+        "POC_Sierra": 6883.0,
+        "VA_High_Sierra": 6884.75,
+        "VA_Low_Sierra": 6883.0,
+        "VA_Areas": "na",
+        "Expected_VA_Areas": "VA"
+      },
+      {
+        "Datetime": "2025-12-07 17:00:00.001003",
+        "Price": 6883.5,
+        "POC_Sierra": 6883.0,
+        "VA_High_Sierra": 6884.75,
+        "VA_Low_Sierra": 6883.0,
+        "VA_Areas": "na",
+        "Expected_VA_Areas": "VA"
+      },
+      {
+        "Datetime": "2025-12-07 17:00:00.001004",
+        "Price": 6883.5,
+        "POC_Sierra": 6883.0,
+        "VA_High_Sierra": 6884.75,
+        "VA_Low_Sierra": 6883.0,
+        "VA_Areas": "na",
+        "Expected_VA_Areas": "VA"
+      },
+      {
+        "Datetime": "2025-12-07 17:00:00.001005",
+        "Price": 6883.75,
+        "POC_Sierra": 6883.0,
+        "VA_High_Sierra": 6884.75,
+        "VA_Low_Sierra": 6883.0,
+        "VA_Areas": "na",
+        "Expected_VA_Areas": "VA"
+      },
+      {
+        "Datetime": "2025-12-07 17:00:00.045000",
+        "Price": 6883.75,
+        "POC_Sierra": 6883.0,
+        "VA_High_Sierra": 6884.75,
+        "VA_Low_Sierra": 6883.0,
+        "VA_Areas": "na",
+        "Expected_VA_Areas": "VA"
+      }
+    ]
+  },
+  "node_volume_validation": {
+    "node_volume_price_levels_checked": 50,
+    "valid_progressions": 47,
+    "invalid_progressions": 3,
+    "validation_percentage": 94.0,
+    "invalid_percentage": 6.0,
+    "node_volume_validation_passed": false,
+    "invalid_samples": [
+      {
+        "session": "2025-12-09",
+        "price": 6844.0,
+        "tick_count": 738,
+        "start_node_vol": 1.0,
+        "end_node_vol": 811.0,
+        "is_non_decreasing": false
+      },
+      {
+        "session": "2025-12-09",
+        "price": 6844.25,
+        "tick_count": 518,
+        "start_node_vol": 3.0,
+        "end_node_vol": 596.0,
+        "is_non_decreasing": false
+      },
+      {
+        "session": "2025-12-09",
+        "price": 6844.5,
+        "tick_count": 629,
+        "start_node_vol": 1.0,
+        "end_node_vol": 561.0,
+        "is_non_decreasing": false
+      }
+    ]
+  },
+  "session_volume_validation": {
+    "sessions_validated": 5,
+    "total_ticks_checked": 3695877,
+    "total_matches": 29965,
+    "total_mismatches": 3665912,
+    "overall_match_percentage": 0.81,
+    "overall_mismatch_percentage": 99.19,
+    "session_volume_validation_passed": false,
+    "session_details": [
+      {
+        "session": "2025-12-07",
+        "total_ticks": 29965,
+        "matches": 29965,
+        "match_percentage": 100.0,
+        "max_difference": 0.0,
+        "final_session_volume": 35007.0,
+        "expected_final_volume": 35007.0
+      },
+      {
+        "session": "2025-12-08",
+        "total_ticks": 830351,
+        "matches": 0,
+        "match_percentage": 0.0,
+        "max_difference": 1115219.0,
+        "final_session_volume": 30751.0,
+        "expected_final_volume": 1145970.0
+      },
+      {
+        "session": "2025-12-09",
+        "total_ticks": 696400,
+        "matches": 0,
+        "match_percentage": 0.0,
+        "max_difference": 895908.0,
+        "final_session_volume": 31406.0,
+        "expected_final_volume": 927314.0
+      },
+      {
+        "session": "2025-12-10",
+        "total_ticks": 1048602,
+        "matches": 0,
+        "match_percentage": 0.0,
+        "max_difference": 1308842.0,
+        "final_session_volume": 100918.0,
+        "expected_final_volume": 1409760.0
+      },
+      {
+        "session": "2025-12-11",
+        "total_ticks": 1090559,
+        "matches": 0,
+        "match_percentage": 0.0,
+        "max_difference": 1409302.0,
+        "final_session_volume": 49332.0,
+        "expected_final_volume": 1458634.0
+      }
+    ]
+  }
+}

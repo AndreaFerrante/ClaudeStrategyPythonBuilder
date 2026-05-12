@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:/Users/Tommy/.conda/envs/prod/python.exe *)",
+      "Bash(PYTHONIOENCODING=utf-8 \"C:/Users/Tommy/.conda/envs/prod/python.exe\" orderflow/runners/runner_trades_valentini_meanreversion_analysis.py)",
+      "Read(//tmp/**)"
+    ]
+  }
+}
